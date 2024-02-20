@@ -6,7 +6,8 @@ public class Chain {
 	private SimpleList<Store> inventory;
 
 	public Chain() {
-		// TODO Auto-generated constructor stub
+		inventory = new SimpleList<Store>();
+
 	}
 
 	private void addStore(Store store) {
