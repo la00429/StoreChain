@@ -1,22 +1,31 @@
 package co.edu.uptc.model;
 
+import java.util.Iterator;
+
 import co.edu.uptc.structures.SimpleList;
 
 public class Chain {
-	private SimpleList<Store> inventory;
+	private SimpleList<Store> stores;
 
 	public Chain() {
-		inventory = new SimpleList<Store>();
+		this.stores = new SimpleList<Store>();
 
 	}
 
-	private void addStore(Store store) {
-		// TODO Auto-generated method stub
-
+	public void addStore(Store store) {
+		this.stores.insert(store);
 	}
 
-	private double calculateTotalValueChain() {
-		return 0.0;
+	public double calculateTotalValueChain() {
+		double totalValueStores = 0.0;
+		Iterator<Store> iterador = stores.iterator();
+		while (iterador.hasNext()) {
+			totalValueStores = totalValueStores + iterador.next().calculateTotalValueStore();
+			{
+				iterador.next();
+			}
+		}
+		return totalValueStores;
 	}
 
 }

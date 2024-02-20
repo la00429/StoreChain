@@ -60,8 +60,9 @@ public class Store {
 			if (this.products.exist(showProduct(code))) {
 				if (iterador.next().getQuantity() > quantity) {
 					isSaleProduct = true;
+					iterador.next().setQuantity(iterador.next().getQuantity() - quantity);
 				}
-			}s
+			}
 		}
 		return isSaleProduct;
 	}
