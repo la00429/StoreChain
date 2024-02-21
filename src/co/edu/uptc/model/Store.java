@@ -30,7 +30,7 @@ public class Store {
 		}
 	}
 
-	public boolean isExistProduct(int code) {
+	private boolean isExistProduct(int code) {
 		boolean isExist = false;
 		Iterator<Product> iterador = products.iterator();
 		while (iterador.hasNext()) {
@@ -102,6 +102,10 @@ public class Store {
 			listProducts.add(iterador.next());
 		}
 		return listProducts;
+	}
+	
+	public String getName() {
+		return name;
 	}
 
 }

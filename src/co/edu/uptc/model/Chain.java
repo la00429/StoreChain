@@ -25,4 +25,16 @@ public class Chain {
 		return totalValueStores;
 	}
 
+	public Store searchStore(String name) {
+		Store store = new Store(null, null);
+		Iterator<Store> iterador = stores.iterator();
+		while (iterador.hasNext()) {
+			if (iterador.next().getName().equals(name)) {
+				store = iterador.next();
+			}
+		}
+		return store;
+
+	}
+
 }
