@@ -42,11 +42,11 @@ public class Presenter implements ActionListener {
 
 		}
 
-		if (source.equals("SeeStore")) {
+		if (source.equals("GoBackChain")) {
 
 		}
-
-		if (source.equals("GoBackChain")) {
+		
+		if (source.equals("RegisterProductOption")) {
 
 		}
 

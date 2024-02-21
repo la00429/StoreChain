@@ -12,14 +12,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-public class JDialogSeeStores extends JDialog {
-	
-	private static final long serialVersionUID = 1L;
-	private JTable stores;
+public class JDialogSeeProdcuts extends JDialog {
+	private JTable products;
 	private JScrollPane scroll;
 	private JButton goBack;
 
-	public JDialogSeeStores(ActionListener listener) {
+	public JDialogSeeProdcuts(ActionListener listener) {
 		this.setSize(new Dimension(getMaximumSize()));
 		this.setModal(true);
 		initComponents(listener);
@@ -34,15 +32,15 @@ public class JDialogSeeStores extends JDialog {
 	}
 
 	private void firstLine(GridBagConstraints gbc) {
-		this.stores = new JTable();
-		this.scroll = new JScrollPane(stores);
+		this.products = new JTable();
+		this.scroll = new JScrollPane(products);
 		gbc.anchor = GridBagConstraints.REMAINDER;
 		this.add(scroll, gbc);
 	}
 
 	private void secondLine(GridBagConstraints gbc, ActionListener listener) {
 		this.goBack = new JButton("Go Back");
-		this.goBack.setActionCommand("GoBackChain");
+		this.goBack.setActionCommand("GoBackStore");
 		this.goBack.addActionListener(listener);
 		gbc.anchor = GridBagConstraints.FIRST_LINE_START;
 		add(goBack, gbc);
@@ -56,6 +54,7 @@ public class JDialogSeeStores extends JDialog {
 		for (Object product : data) {
 			model.addRow(new Object[] { product });
 		}
-		stores.setModel(model);
+		products.setModel(model);
 	}
+
 }

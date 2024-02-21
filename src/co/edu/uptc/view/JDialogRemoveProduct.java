@@ -10,16 +10,19 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class JDialogSellProduct extends JDialog {
+public class JDialogRemoveProduct extends JDialog {
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
-	private JLabel code;
-	private JTextField codeInput;
-	private JLabel quantity;
-	private JTextField quantityInput;
-	private JButton sellProduct;
+	private JLabel valueFirst;
+	private JTextField valueFirstInput;
+	private JLabel valueEnd;
+	private JTextField valueEndInput;
+	private JButton removeProduct;
 	private JButton goBack;
 
-	public JDialogSellProduct(ActionListener listener) {
+	public JDialogRemoveProduct(ActionListener listener) {
 		this.setSize(600, 300);
 		this.setModal(true);
 		initComponents(listener);
@@ -35,34 +38,34 @@ public class JDialogSellProduct extends JDialog {
 	}
 
 	private void firstLine(GridBagConstraints gbc) {
-		this.code = new JLabel("code");
+		this.valueFirst = new JLabel("Value First");
 		gbc.gridwidth = 1;
 		gbc.insets = new Insets(10, 10, 10, 10);
-		add(code, gbc);
+		add(valueFirst, gbc);
 
-		codeInput = new JTextField(20);
+		valueFirstInput = new JTextField(20);
 		gbc.gridwidth = GridBagConstraints.REMAINDER;
-		add(codeInput, gbc);
+		add(valueFirstInput, gbc);
 	}
 
 	private void secondLine(GridBagConstraints gbc) {
-		this.quantity = new JLabel("quantity");
+		this.valueEnd = new JLabel("Value End");
 		gbc.gridwidth = 1;
 		gbc.fill = GridBagConstraints.NONE;
-		add(quantity, gbc);
+		add(valueEnd, gbc);
 
-		quantityInput = new JTextField(20);
+		valueEndInput = new JTextField(20);
 		gbc.gridwidth = GridBagConstraints.REMAINDER;
-		add(quantityInput, gbc);
+		add(valueEndInput, gbc);
 	}
 
 	private void thirdLine(GridBagConstraints gbc, ActionListener listener) {
-		this.sellProduct = new JButton("Sell Product");
-		this.sellProduct.setActionCommand("SellProduct");
-		this.sellProduct.addActionListener(listener);
+		this.removeProduct = new JButton("Remove Product");
+		this.removeProduct.setActionCommand("removeProduct");
+		this.removeProduct.addActionListener(listener);
 		gbc.gridwidth = 1;
 		gbc.anchor = GridBagConstraints.FIRST_LINE_END;
-		add(sellProduct, gbc);
+		add(removeProduct, gbc);
 		this.goBack = new JButton("Go Back");
 		this.goBack.setActionCommand("GoBackStore");
 		this.goBack.addActionListener(listener);
@@ -70,12 +73,12 @@ public class JDialogSellProduct extends JDialog {
 		add(goBack, gbc);
 	}
 
-	public String dataCode() {
-		return codeInput.getText();
+	public String dataValueFirst() {
+		return valueFirstInput.getText();
 	}
 
-	public String dataQuantity() {
-		return quantityInput.getText();
+	public String dataValueEnd() {
+		return valueEndInput.getText();
 	}
 
 }

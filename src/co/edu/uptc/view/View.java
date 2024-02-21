@@ -4,11 +4,9 @@ import java.awt.event.ActionListener;
 
 public class View {
 	private JFrameApp jFrame;
-	
-	public View(ActionListener listener) {
-		jFrame = new JFrameApp()
-		
 
+	public View(ActionListener listener) {
+		jFrame = new JFrameApp(listener);
 	}
 
 }
