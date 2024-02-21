@@ -1,7 +1,10 @@
 package co.edu.uptc.model;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
+import co.edu.uptc.model.exceptions.ProductFoundException;
+import co.edu.uptc.model.exceptions.SaleNoMadeException;
 import co.edu.uptc.structures.DoubleList;
 
 public class Store {
@@ -16,15 +19,33 @@ public class Store {
 		this.products = new DoubleList<Product>();
 	}
 
-	public void registerProduct(Product product) {
-		this.products.insert(product);
-	}
-
-	public Product showProduct(String code) {
-		Product product = new Product(null, null, 0, 0);
+	public void addProduct(Product product) throws ProductFoundException {
 		Iterator<Product> iterador = products.iterator();
 		while (iterador.hasNext()) {
-			if (iterador.next().getCode().equals(code)) {
+			if (isExistProduct(product.getCode()) == false) {
+				this.products.insert(product);
+			} else {
+				throw new ProductFoundException();
+			}
+		}
+	}
+
+	public boolean isExistProduct(int code) {
+		boolean isExist = false;
+		Iterator<Product> iterador = products.iterator();
+		while (iterador.hasNext()) {
+			if (iterador.next().getCode() == code) {
+				isExist = true;
+			}
+		}
+		return isExist;
+	}
+
+	public Product searchProduct(int code) {
+		Product product = new Product(0, null, 0, 0);
+		Iterator<Product> iterador = products.iterator();
+		while (iterador.hasNext()) {
+			if (iterador.next().getCode() == code) {
 				product = iterador.next();
 			}
 		}
@@ -52,19 +73,35 @@ public class Store {
 		return totalValue;
 
 	}
+//Lanzar la exepción de venta no realizada. 
 
-	private boolean sellProduct(String code, int quantity) {
-		boolean isSaleProduct = false;
+	public void sellProduct(int code, int quantity) throws SaleNoMadeException {
 		Iterator<Product> iterador = products.iterator();
 		while (iterador.hasNext()) {
-			if (this.products.exist(showProduct(code))) {
-				if (iterador.next().getQuantity() > quantity) {
-					isSaleProduct = true;
-					iterador.next().setQuantity(iterador.next().getQuantity() - quantity);
-				}
+			if (this.products.exist(searchProduct(code)) && iterador.next().getQuantity() > quantity) {
+				iterador.next().setQuantity(iterador.next().getQuantity() - quantity);
+			} else {
+				throw new SaleNoMadeException();
 			}
 		}
-		return isSaleProduct;
+	}
+
+	public void removeProductRange(int upperCode, int lowerCode) {
+		Iterator<Product> iterador = products.iterator();
+		while (iterador.hasNext()) {
+			if (iterador.next().getCode() >= lowerCode && iterador.next().getCode() <= upperCode) {
+				this.products.remove(iterador.next());
+			}
+		}
+	}
+
+	public ArrayList<Product> showListProducst() {
+		ArrayList<Product> listProducts = new ArrayList<Product>();
+		Iterator<Product> iterador = products.iterator();
+		while (iterador.hasNext()) {
+			listProducts.add(iterador.next());
+		}
+		return listProducts;
 	}
 
 }

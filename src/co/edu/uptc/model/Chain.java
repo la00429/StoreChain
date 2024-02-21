@@ -21,9 +21,6 @@ public class Chain {
 		Iterator<Store> iterador = stores.iterator();
 		while (iterador.hasNext()) {
 			totalValueStores = totalValueStores + iterador.next().calculateTotalValueStore();
-			{
-				iterador.next();
-			}
 		}
 		return totalValueStores;
 	}

@@ -1,19 +1,19 @@
 package co.edu.uptc.model;
 
 public class Product {
-	private String code;
+	private int code;
 	private String name;
 	private int quantity;
 	private double price;
 
-	public Product(String code, String name, int quantity, double price) {
+	public Product(int code, String name, int quantity, double price) {
 		this.code = code;
 		this.name = name;
 		this.quantity = quantity;
 		this.price = price;
 	}
 
-	public String getCode() {
+	public int getCode() {
 		return code;
 	}
 
