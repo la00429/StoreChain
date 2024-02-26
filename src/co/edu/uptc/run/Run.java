@@ -7,6 +7,7 @@ public class Run {
 //		Presenter presenter = new Presenter();
 //		presenter.loadData();
 		System.out.println("i");
+		System.out.println("da");
 	}
 
 }
