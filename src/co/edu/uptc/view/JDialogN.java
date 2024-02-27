@@ -1,4 +1,6 @@
 package co.edu.uptc.view;
 
-public class JDialogN {
+import javax.swing.*;
+
+public class JDialogN extends JDialog {
 }
