@@ -34,7 +34,7 @@ public class JDialogSeeProdcuts extends JDialog {
 	private void firstLine(GridBagConstraints gbc) {
 		this.products = new JTable();
 		this.scroll = new JScrollPane(products);
-		gbc.anchor = GridBagConstraints.REMAINDER;
+		gbc.anchor = GridBagConstraints.FIRST_LINE_END;;
 		this.add(scroll, gbc);
 	}
 

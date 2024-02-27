@@ -37,13 +37,13 @@ public class JPanelStore extends JPanel {
 
 	private void firstLine(GridBagConstraints gbc) {
 		this.name = new JLabel();
-		gbc.anchor = new GridBagConstraints().REMAINDER;
+		gbc.anchor = GridBagConstraints.CENTER;
 		this.add(name, gbc);
 	}
 
 	private void secondLine(GridBagConstraints gbc) {
 		this.address = new JLabel();
-		gbc.anchor = new GridBagConstraints().FIRST_LINE_START;
+		gbc.anchor = GridBagConstraints.FIRST_LINE_START;
 		gbc.gridwidth = 1;
 		this.add(address, gbc);
 	}
@@ -60,7 +60,7 @@ public class JPanelStore extends JPanel {
 		this.addProduct = new JButton("Register product");
 		this.addProduct.setActionCommand("RegisterProductOption");
 		this.addProduct.addActionListener(listener);
-		gbc.anchor = new GridBagConstraints().FIRST_LINE_END;
+		gbc.anchor = GridBagConstraints.FIRST_LINE_END;
 		gbc.gridwidth = 1;
 		this.add(addProduct, gbc);
 	}
@@ -69,7 +69,7 @@ public class JPanelStore extends JPanel {
 		this.searchProduct = new JButton("Search Product");
 		this.searchProduct.setActionCommand("SearchProductOption");
 		this.searchProduct.addActionListener(listener);
-		gbc.anchor = new GridBagConstraints().FIRST_LINE_START;
+		gbc.anchor = GridBagConstraints.FIRST_LINE_START;
 		this.add(searchProduct, gbc);
 	}
 
@@ -77,7 +77,7 @@ public class JPanelStore extends JPanel {
 		this.sellProduct = new JButton("Sell Product");
 		this.sellProduct.setActionCommand("SellProductOption");
 		this.sellProduct.addActionListener(listener);
-		gbc.anchor = new GridBagConstraints().FIRST_LINE_START;
+		gbc.anchor = GridBagConstraints.FIRST_LINE_START;
 		this.add(sellProduct, gbc);
 
 	}
@@ -86,7 +86,7 @@ public class JPanelStore extends JPanel {
 		this.removeProducts = new JButton("Remove Product");
 		this.removeProducts.setActionCommand("RemoveProductOption");
 		this.removeProducts.addActionListener(listener);
-		gbc.anchor = new GridBagConstraints().FIRST_LINE_START;
+		gbc.anchor =GridBagConstraints.FIRST_LINE_START;
 		this.add(removeProducts, gbc);
 
 	}
@@ -95,21 +95,21 @@ public class JPanelStore extends JPanel {
 		this.seeTableProducts = new JButton("See Table Products");
 		this.seeTableProducts.setActionCommand("SeeTableProductsOption");
 		this.seeTableProducts.addActionListener(listener);
-		gbc.anchor = new GridBagConstraints().FIRST_LINE_START;
+		gbc.anchor = GridBagConstraints.FIRST_LINE_START;
 		this.add(seeTableProducts, gbc);
 
 	}
 
 	private void forthLine(GridBagConstraints gbc) {
 		this.quantityProducts = new JLabel("");
-		gbc.anchor = new GridBagConstraints().FIRST_LINE_END;
+		gbc.anchor = GridBagConstraints.FIRST_LINE_END;
 		this.add(quantityProducts, gbc);
 
 	}
 
 	private void fifthLine(GridBagConstraints gbc) {
 		this.valueTotal = new JLabel("");
-		gbc.anchor = new GridBagConstraints().FIRST_LINE_END;
+		gbc.anchor = GridBagConstraints.FIRST_LINE_END;
 		this.add(valueTotal, gbc);
 	}
 

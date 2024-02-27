@@ -60,7 +60,7 @@ public class JDialogCreateStore extends JDialog {
 		this.createStore.setActionCommand("CreateStore");
 		this.createStore.addActionListener(listener);
 		gbc.gridwidth = 1;
-		gbc.anchor = GridBagConstraints.FIRST_LINE_END;
+		gbc.anchor = GridBagConstraints.CENTER;
 		add(createStore, gbc);
 		this.goBack = new JButton("Go Back");
 		this.goBack.setActionCommand("GoBackChain");

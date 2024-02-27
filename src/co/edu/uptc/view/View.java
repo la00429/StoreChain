@@ -1,5 +1,6 @@
 package co.edu.uptc.view;
 
+import javax.swing.*;
 import java.awt.event.ActionListener;
 
 public class View {
@@ -9,4 +10,7 @@ public class View {
 		jFrame = new JFrameApp(listener);
 	}
 
+	public void showMessage(String message) {
+		JOptionPane.showMessageDialog(jFrame, message);
+	}
 }

@@ -1,7 +1,7 @@
 package co.edu.uptc.view;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
-public class JPanelApp extends JFrame {
+public class JPanelApp extends JPanel {
 
 }

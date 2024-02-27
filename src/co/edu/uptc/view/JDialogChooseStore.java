@@ -55,8 +55,7 @@ public class JDialogChooseStore extends JDialog {
 		this.goBack = new JButton("Go Back");
 		goBack.setActionCommand("GoBackChain");
 		goBack.addActionListener(listener);
-		gbc.gridwidth = 1;
-		gbc.anchor = GridBagConstraints.REMAINDER;
+		gbc.gridwidth =  GridBagConstraints.REMAINDER;
 		add(goBack, gbc);
 
 	}

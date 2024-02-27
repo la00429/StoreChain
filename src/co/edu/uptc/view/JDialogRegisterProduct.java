@@ -93,7 +93,7 @@ public class JDialogRegisterProduct extends JDialog {
 		this.registerProduct.setActionCommand("RegisterProduct");
 		this.registerProduct.addActionListener(listener);
 		gbc.gridwidth = 1;
-		gbc.anchor = GridBagConstraints.FIRST_LINE_END;
+		gbc.anchor = GridBagConstraints.CENTER;
 		add(registerProduct, gbc);
 		
 		this.goBack = new JButton("Go Back");

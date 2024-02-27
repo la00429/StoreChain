@@ -11,7 +11,8 @@ public class Presenter implements ActionListener {
 	private View view;
 
 	public Presenter() {
-		// TODO Auto-generated constructor stub
+		Chain chain = new Chain();
+		View view = new View(this);
 	}
 
 	public void loadData() {
@@ -47,6 +48,42 @@ public class Presenter implements ActionListener {
 		}
 		
 		if (source.equals("RegisterProductOption")) {
+
+		}
+
+		if (source.equals("RegisterProduct")) {
+
+		}
+
+		if (source.equals("SearchProductOption")) {
+
+		}
+
+		if (source.equals("SearchProduct")) {
+
+		}
+
+		if (source.equals("SellProductOption")) {
+
+		}
+
+		if (source.equals("SellProduct")) {
+
+		}
+
+		if (source.equals("RemoveProductOption")) {
+
+		}
+
+		if (source.equals("RemoveProduct")) {
+
+		}
+
+		if (source.equals("SeeTableProductsOption")) {
+
+		}
+
+		if (source.equals("GoBackStore")) {
 
 		}
 

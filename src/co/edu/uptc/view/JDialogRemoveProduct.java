@@ -61,10 +61,10 @@ public class JDialogRemoveProduct extends JDialog {
 
 	private void thirdLine(GridBagConstraints gbc, ActionListener listener) {
 		this.removeProduct = new JButton("Remove Product");
-		this.removeProduct.setActionCommand("removeProduct");
+		this.removeProduct.setActionCommand("RemoveProduct");
 		this.removeProduct.addActionListener(listener);
 		gbc.gridwidth = 1;
-		gbc.anchor = GridBagConstraints.FIRST_LINE_END;
+		gbc.anchor = GridBagConstraints.CENTER;
 		add(removeProduct, gbc);
 		this.goBack = new JButton("Go Back");
 		this.goBack.setActionCommand("GoBackStore");

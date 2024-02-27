@@ -48,11 +48,11 @@ public class JDialogSearchProduct extends JDialog {
 		add(codeProduct, gbc);
 
 		this.searchProduct = new JButton("Search Product");
-		goBack.setActionCommand("SearchProduct");
-		goBack.addActionListener(listener);
+		searchProduct.setActionCommand("SearchProduct");
+		searchProduct.addActionListener(listener);
 		gbc.gridwidth = 1;
-		gbc.anchor = GridBagConstraints.REMAINDER;
-		add(goBack, gbc);
+		gbc.anchor = GridBagConstraints.FIRST_LINE_END;
+		add(searchProduct, gbc);
 	}
 
 	private void firstLine(GridBagConstraints gbc, ActionListener listener) {
@@ -103,10 +103,10 @@ public class JDialogSearchProduct extends JDialog {
 
 	private void fifthLine(GridBagConstraints gbc, ActionListener listener) {
 		this.goBack = new JButton("Go Back");
-		goBack.setActionCommand("GoBackChain");
+		goBack.setActionCommand("GoBackStore");
 		goBack.addActionListener(listener);
 		gbc.gridwidth = 1;
-		gbc.anchor = GridBagConstraints.REMAINDER;
+		gbc.anchor = GridBagConstraints.FIRST_LINE_END;;
 		add(goBack, gbc);
 
 	}

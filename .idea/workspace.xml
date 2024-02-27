@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcc5e83f-79b7-4f6f-a6d0-2b670d1f1891" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="dcc5e83f-79b7-4f6f-a6d0-2b670d1f1891" name="Changes" comment="cargar datos desde el main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/co/edu/uptc/model/Chain.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/co/edu/uptc/model/Chain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/co/edu/uptc/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/co/edu/uptc/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/co/edu/uptc/model/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/co/edu/uptc/model/Store.class" afterDir="false" />
@@ -17,15 +15,39 @@
       <change beforePath="$PROJECT_DIR$/bin/co/edu/uptc/structures/NodeDouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/co/edu/uptc/structures/NodeDouble.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/co/edu/uptc/structures/SimpleList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/co/edu/uptc/structures/SimpleList$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/co/edu/uptc/structures/SimpleList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/co/edu/uptc/structures/SimpleList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/presenter/Presenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/run/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/run/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogChooseStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogChooseStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogCreateStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogCreateStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogRegisterProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogRegisterProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogRemoveProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogRemoveProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogSearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogSearchProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogSeeProdcuts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogSeeProdcuts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogSeeStores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogSeeStores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogSellProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JDialogSellProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JFrameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JFrameApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JPanelApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JPanelApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JPanelChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JPanelChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/JPanelStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/JPanelStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
@@ -39,12 +61,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -56,11 +80,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708985739208</updated>
-      <workItem from="1708985740225" duration="972000" />
+      <workItem from="1708985740225" duration="7710000" />
     </task>
+    <task id="LOCAL-00001" summary="Cambio de IDE">
+      <option name="closed" value="true" />
+      <created>1708987915403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708987915403</updated>
+    </task>
+    <task id="LOCAL-00002" summary="creación Diajog">
+      <option name="closed" value="true" />
+      <created>1709000113101</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709000113102</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cargar datos desde el main">
+      <option name="closed" value="true" />
+      <created>1709000164076</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709000164076</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cambio de IDE" />
+    <MESSAGE value="creación Diajog" />
+    <MESSAGE value="cargar datos desde el main" />
+    <option name="LAST_COMMIT_MESSAGE" value="cargar datos desde el main" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
